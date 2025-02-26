@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop Organic</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" />
+        <!-- Remixicon CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+            integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <header id="header" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a class="navbar-brand" href="/">
+                            <img class="logo" src="./assets/img/logo_website.png" alt="logo" />
+                        </a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="col-lg-7 p-0">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="margin-right: 12px">
+                                    <i class="ri-heart-fill" style="font-size: 18px"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="margin-right: 12px">
+                                    <i class="ri-shopping-cart-fill" style="font-size: 18px"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-top: 8px">
+                                item: <span style="font-weight: 700; font-size: 13px">$150.000</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main" class="container">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="card" style="border: none; border-radius: 0">
+                            <img
+                                id="main-image"
+                                src="./assets/img/product-details-1.jpg"
+                                class="card-img-top"
+                                alt="Ảnh sản phẩm chính"
+                            />
+                            <div class="card-body">
+                                <div class="thumbnail-carousel-wrapper">
+                                    <img
+                                        src="./assets/img/thumb-1.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 1"
+                                        onclick="changeMainImage('assets/img/thumb-1.jpg', this)"
+                                    />
+                                    <img
+                                        src="./assets/img/thumb-2.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 2"
+                                        onclick="changeMainImage('assets/img/thumb-2.jpg', this)"
+                                    />
+                                    <img
+                                        src="./assets/img/thumb-3.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 3"
+                                        onclick="changeMainImage('assets/img/thumb-3.jpg', this)"
+                                    />
+                                    <img
+                                        src="./assets/img/thumb-4.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 4"
+                                        onclick="changeMainImage('assets/img/thumb-4.jpg', this)"
+                                    />
+                                    <img
+                                        src="./assets/img/thumb-3.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 1"
+                                        onclick="changeMainImage('assets/img/thumb-4.jpg', this)"
+                                    />
+                                    <img
+                                        src="./assets/img/thumb-4.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 2"
+                                        onclick="changeMainImage('assets/img/thumb-4.jpg', this)"
+                                    />
+                                    <img
+                                        src="./assets/img/thumb-1.jpg"
+                                        class="img-fluid"
+                                        alt="Ảnh mô tả 3"
+                                        onclick="changeMainImage('assets/img/thumb-4.jpg', this)"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="detail">
+                            <h3 class="detail-title">Vegetable's Package</h3>
+                            <div class="detail-star d-flex">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <span>(18 reviews)</span>
+                            </div>
+                            <p class="detail-price">$50.00</p>
+                            <p class="detail-desc">
+                                Mauris blandit aliquet eit, ege tincidunt nibh puvinar a. Vestibulum ac diam sit amet
+                                quam vehicula elementum sed sit amet dui. Set porttior lectus nibh. Vestibulum ac diam
+                                sit elementum sed sit amet dui. Set porttior lectus nibh
+                            </p>
+                        </div>
+
+                        <div class="d-flex mt-4">
+                            <div class="d-flex mb-4">
+                                <div class="detail-num text-center">
+                                    <i class="ri-subtract-line" onclick="decreaseQuantity()"></i>
+                                    <span id="quantity" style="margin-left: 12px; margin-right: 12px">1</span>
+                                    <i class="ri-add-line" onclick="increaseQuantity()"></i>
+                                </div>
+                                <button class="detail-btn">ADD TO CARD</button>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <table class="mt-4">
+                            <tr>
+                                <td style="width: 150px"><b>Availability</b></td>
+                                <td style="width: 300px">In Stock</td>
+                            </tr>
+                            <tr>
+                                <td><b>Shipping</b></td>
+                                <td>01 day shipping.<span class="text-danger">Free pickup today</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Weight</b></td>
+                                <td>0.5 kg</td>
+                            </tr>
+                            <tr>
+                                <td><b>Share on</b></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <button
+                        class="tablinks active btn"
+                        data-electronic="Description"
+                        onclick="openTab(event, 'Description')"
+                    >
+                        Description
+                    </button>
+                    <button class="tablinks btn" data-electronic="Information" onclick="openTab(event, 'Information')">
+                        Information
+                    </button>
+                    <button class="tablinks btn" data-electronic="Review" onclick="openTab(event, 'Review')">
+                        Review
+                    </button>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="tabcontent active" id="Description">
+                    <h3>Products Description</h3>
+                    <p>
+                        1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae convallis ante. Nam euismod
+                        neque eget nulla tincidunt consequat. Integer sit amet vehicula risus. Fusce sed augue vel mi
+                        convallis consequat. Aliquam erat volutpat. Morbi id lacinia ligula. Sed nec nisi sit amet magna
+                        varius ullamcorper. Maecenas non quam ac purus scelerisque fermentum eget nec nisi. Vivamus ac
+                        ipsum ultrices, rutrum ex nec, consequat eros. Morbi tincidunt sem non libero accumsan, sit amet
+                        facilisis metus posuere. Donec hendrerit nulla eget tellus rhoncus, sit amet auctor neque
+                        tempus. Sed at ex ut velit viverra mattis.
+                    </p>
+                </div>
+
+                <div class="tabcontent" id="Information">
+                    <h3>Products Information</h3>
+                    <p>
+                        2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae convallis ante. Nam euismod
+                        neque eget nulla tincidunt consequat. Integer sit amet vehicula risus. Fusce sed augue vel mi
+                        convallis consequat. Aliquam erat volutpat. Morbi id lacinia ligula. Sed nec nisi sit amet magna
+                        varius ullamcorper. Maecenas non quam ac purus scelerisque fermentum eget nec nisi. Vivamus ac
+                        ipsum ultrices, rutrum ex nec, consequat eros. Morbi tincidunt sem non libero accumsan, sit amet
+                        facilisis metus posuere. Donec hendrerit nulla eget tellus rhoncus, sit amet auctor neque
+                        tempus. Sed at ex ut velit viverra mattis.
+                    </p>
+                </div>
+
+                <div class="tabcontent" id="Review">
+                    <h3>Products Review</h3>
+                    <p>
+                        3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae convallis ante. Nam euismod
+                        neque eget nulla tincidunt consequat. Integer sit amet vehicula risus. Fusce sed augue vel mi
+                        convallis consequat. Aliquam erat volutpat. Morbi id lacinia ligula. Sed nec nisi sit amet magna
+                        varius ullamcorper. Maecenas non quam ac purus scelerisque fermentum eget nec nisi. Vivamus ac
+                        ipsum ultrices, rutrum ex nec, consequat eros. Morbi tincidunt sem non libero accumsan, sit amet
+                        facilisis metus posuere. Donec hendrerit nulla eget tellus rhoncus, sit amet auctor neque
+                        tempus. Sed at ex ut velit viverra mattis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // thay doi so luong san pham
+            function changeMainImage(imageSrc) {
+                document.getElementById("main-image").src = imageSrc;
+
+                const thumbnails = document.querySelectorAll(".thumbnail-carousel-wrapper img");
+                thumbnails.forEach((thumbnail) => {
+                    thumbnail.classList.remove("selected");
+                });
+
+                event.target.classList.add("selected");
+            }
+
+            function increaseQuantity() {
+                const quantityElement = document.getElementById("quantity");
+                let quantity = parseInt(quantityElement.textContent);
+                quantity++;
+                quantityElement.textContent = quantity;
+            }
+
+            function decreaseQuantity() {
+                const quantityElement = document.getElementById("quantity");
+                let quantity = parseInt(quantityElement.textContent);
+                if (quantity > 1) {
+                    quantity--;
+                    quantityElement.textContent = quantity;
+                }
+            }
+
+            // click anh se thay doi
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).className += " active";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </body>
+</html>
